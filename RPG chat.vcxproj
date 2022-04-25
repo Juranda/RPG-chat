@@ -141,11 +141,13 @@
   <ItemGroup>
     <ClInclude Include="Arma.h" />
     <ClInclude Include="BancoDeArmasRandom.h" />
+    <ClInclude Include="BancoDePersonagensRandom.h" />
     <ClInclude Include="Personagem.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Arma.cpp" />
     <ClCompile Include="BancoDeArmasRandom.cpp" />
+    <ClCompile Include="BancoDePersonagensRandom.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Personagem.cpp" />
   </ItemGroup>

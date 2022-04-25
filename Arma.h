@@ -18,7 +18,6 @@ public:
 	DamageType PegarTipoDeDano();
 	int PegarDano();
 	std::string PegarNome();
-	void CausarDano();
 
 private:
 	DamageType tipoDeArma;

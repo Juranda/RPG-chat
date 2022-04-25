@@ -1,13 +1,12 @@
 #pragma once
-#include <vector>
 #include "Arma.h"
+#include <vector>
 
 struct BancoDeArmasRandom
 {
-public:
 	std::vector<Arma> banco;
-
 	BancoDeArmasRandom();
+	Arma PegarArmaAleatoria();
 
 };
 

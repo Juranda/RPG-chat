@@ -25,10 +25,3 @@ std::string Arma::PegarNome()
 {
 	return this->nome;
 }
-
-void Arma::CausarDano()
-{
-	std::cout << "Causado " << this->damage << "de dano." << std::endl;
-
-
-}

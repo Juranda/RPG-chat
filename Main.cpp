@@ -1,8 +1,6 @@
 #include <iostream>
-#include <string>
-#include "Personagem.h"
-#include "Arma.h"
-#include "BancoDeArmasRandom.h"
+#include <random>
+#include "BancoDePersonagensRandom.h"
 
 #ifdef _WIN32
 #include <Windows.h>
@@ -14,14 +12,15 @@ using namespace std;
 
 
 int main(int argc, char argv[]) {
-	
-	BancoDeArmasRandom bancoDeArmas;
 
+	vector<Personagem> personagens = BancoDePersonagensRandom().banco;
+
+	/*
 	for (int i = 0; i < 10; i++) {
 		Arma* arma = &bancoDeArmas.banco[rand() % bancoDeArmas.banco.size()];
 		string tipo;
 
-
+		//Conversor de tipo para string
 		switch (arma->PegarTipoDeDano())
 		{
 			default:
@@ -35,11 +34,19 @@ int main(int argc, char argv[]) {
 			case Arma::DamageType::Ar: tipo = "Ar";
 				break;
 		}
+
 		cout << "Nome: " << arma->PegarNome() << endl;
 		cout << "Tipo: " << tipo << endl;
 		cout << "Dano: " << arma->PegarDano() << endl;
 		cout << "------------------------------------------" << endl;
 	}
+	*/
+
+	for (int i = 0; i < personagens.size(); i++)
+	{
+		personagens[i].falar();
+	}
+
 
 	return 0;
 }
